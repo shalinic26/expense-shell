@@ -48,7 +48,7 @@ VALIDATE $? "Enabling Nodejs 20 version"
 dnf install nodejs -y &>>$LOG_FILE_NAME
 VALIDATE $? "Installing Nodejs"
 
-id expense # Before adding the user by name "expense" we are trying to get the ID for this user by command "id expense"
+id expense &>>$LOG_FILE_NAME # Before adding the user by name "expense" we are trying to get the ID for this user by command "id expense"
 
 if [ $? -ne 0 ] # Obviously it wont be 0 as we havent added the user 
 then
