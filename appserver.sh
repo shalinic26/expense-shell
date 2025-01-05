@@ -75,7 +75,7 @@ VALIDATE $? "Unzipping backend code from tmp directory to our app directory"
 npm install &>>$LOG_FILE_NAME
 VALIDATE $? "Installing dependencies npm"
 
-cp /d/DevOps Course/AWS Devops by Siva/December 2024 DevSecOps Course/expense-repo/expense-shell/backend.service /etc/systemd/system/backend.service &>>$LOG_FILE_NAME
+cp /home/ec2-user/expense-shell/backend.service /etc/systemd/system/backend.service &>>$LOG_FILE_NAME
 
 # The below 3 Commands are actually before mysql client installation steps in expense documentation of siva but dont know why he wrote in last steps
 
